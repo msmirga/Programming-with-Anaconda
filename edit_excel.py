@@ -127,9 +127,6 @@ class Main:
                 cell = new_sheet.cell(row=row, column=2)
                 cell.border = border
 
-            #Align
-            merged_cell[0][0].alignment = Alignment(horizontal="left", vertical="top")
-
             # Fill in the current date in cell B10 and edit alignment
             cell_b10 = new_sheet['B10']
             cell_b10.value = f"Date: {datetime.now().date()}"
